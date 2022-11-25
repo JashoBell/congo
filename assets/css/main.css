@@ -3,6 +3,39 @@
 @tailwind base;
 @tailwind components;
 
+
+
+.header-font:is(h1) {
+  font-family: "Vollkorn SC", serif;
+  text-align: center;
+  font-weight: 300;
+  @apply w-full;
+  @apply border-primary-400;
+  @apply border-b;
+}
+
+.name-font:is(h1) {
+  font-family: "Vollkorn SC", serif;
+  text-align: center;
+  font-weight: 300;
+  @apply w-full;
+
+}
+
+.header-font:is(h2, h3, h4, h5, h6) {
+  font-family: "Vollkorn SC", serif;
+  text-align: center;
+  font-weight: 300;
+  @apply w-5/6;
+  @apply mx-auto;
+  @apply border-primary-600;
+  @apply border-b;
+}
+
+html {
+  font-family: "Nunito Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 body a,
 body button {
   @apply transition-colors;

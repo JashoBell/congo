@@ -1,33 +1,26 @@
 {
-  "name": "hugo-congo-theme",
-  "version": "2.4.1",
-  "description": "Congo theme for Hugo",
-  "scripts": {
-    "preinstall": "rimraf assets/lib",
-    "postinstall": "vendor-copy",
-    "assets": "rimraf assets/lib && vendor-copy",
-    "dev": "NODE_ENV=development ./node_modules/tailwindcss/lib/cli.js -i ./assets/css/main.css -o ./assets/css/compiled/main.css --jit -w",
-    "build": "NODE_ENV=production ./node_modules/tailwindcss/lib/cli.js -i ./assets/css/main.css -o ./assets/css/compiled/main.css --jit",
-    "example": "hugo server --source exampleSite --themesDir ../.. --buildDrafts -b http://localhost/congo/ -p 8008",
-    "lighthouse": "lhci autorun"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jpanther/congo.git"
-  },
-  "keywords": [
-    "hugo",
-    "hugo-theme",
-    "tailwind",
-    "dark-mode"
-  ],
   "author": "James Panther",
-  "funding": "https://github.com/sponsors/jpanther",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/jpanther/congo/issues"
   },
-  "homepage": "https://github.com/jpanther/congo#readme",
+  "comments": {
+    "dependencies": {},
+    "devDependencies": {
+      "@tailwindcss/typography": "project",
+      "chart.js": "project",
+      "fuse.js": "project",
+      "katex": "project",
+      "mermaid": "project",
+      "prettier": "project",
+      "prettier-plugin-go-template": "project",
+      "prettier-plugin-tailwindcss": "project",
+      "rimraf": "project",
+      "tailwindcss": "project",
+      "vendor-copy": "project"
+    }
+  },
+  "dependencies": {},
+  "description": "Congo theme for Hugo",
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.8",
     "chart.js": "^4.0.1",
@@ -41,7 +34,6 @@
     "tailwindcss": "^3.2.4",
     "vendor-copy": "^3.0.1"
   },
-  "vendorCopy": [],
   "devVendorCopy": [
     {
       "from": "node_modules/mermaid/dist/mermaid.min.js",
@@ -71,5 +63,30 @@
       "from": "node_modules/fuse.js/dist/fuse.min.js",
       "to": "assets/lib/fuse/fuse.min.js"
     }
-  ]
+  ],
+  "funding": "https://github.com/sponsors/jpanther",
+  "homepage": "https://github.com/jpanther/congo#readme",
+  "keywords": [
+    "hugo",
+    "hugo-theme",
+    "tailwind",
+    "dark-mode"
+  ],
+  "license": "MIT",
+  "name": "hugo-congo-theme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jpanther/congo.git"
+  },
+  "scripts": {
+    "assets": "rimraf assets/lib && vendor-copy",
+    "build": "NODE_ENV=production ./node_modules/tailwindcss/lib/cli.js -i ./assets/css/main.css -o ./assets/css/compiled/main.css --jit",
+    "dev": "NODE_ENV=development ./node_modules/tailwindcss/lib/cli.js -i ./assets/css/main.css -o ./assets/css/compiled/main.css --jit -w",
+    "example": "hugo server --source exampleSite --themesDir ../.. --buildDrafts -b http://localhost/congo/ -p 8008",
+    "lighthouse": "lhci autorun",
+    "postinstall": "vendor-copy",
+    "preinstall": "rimraf assets/lib"
+  },
+  "vendorCopy": [],
+  "version": "2.4.1"
 }

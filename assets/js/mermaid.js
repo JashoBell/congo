@@ -14,7 +14,7 @@ mermaid.initialize({
     tertiaryBorderColor: css("--color-neutral-400"),
     lineColor: css("--color-neutral-600"),
     fontFamily:
-      "ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif",
+      "nunito sans,noto sans,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,sans-serif",
     fontSize: "16px",
   },
 });

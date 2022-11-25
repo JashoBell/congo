@@ -2,6 +2,8 @@ module.exports = {
   content: [
     "./layouts/**/*.html",
     "./content/**/*.{html,md}",
+    "../../layouts/**/*.{html,md}",
+    "../../content/**/*.{html,md}",
     "./themes/congo/layouts/**/*.html",
     "./themes/congo/content/**/*.{html,md}",
   ],
@@ -48,6 +50,10 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        'sans': ['"Nunito Sans"', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Roboto', '"Helvetica Neue"', 'Arial', '"Noto Sans"', 'sans-serif', '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"', '"Noto Color Emoji"'],
+        'serif': ['"Vollkorn SC"'],
+      },
       typography: ({ theme }) => ({
         DEFAULT: {
           css: {
